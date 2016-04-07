@@ -27,7 +27,6 @@ echo('<div class="section" style="height:300px;">
 
 <p>Download resource</p>
 
-
 </div>');
 echo('<div class="section" style="height:300px;width:50%;border:solid thin silver;">
 <p>DESCRIPTION</p>
@@ -53,12 +52,6 @@ echo('<div class="section" style="height:300px;width:50%;border:solid thin silve
 
 
 </div>');
-
-
-
-
-
-
 echo('<div class="section" style="height:300px;">
 
 <p>Animation images</p>
@@ -67,18 +60,6 @@ echo('<div class="section" style="height:300px;">
 <p>Bulleting for University</p>
 
 </div>');
-
-
-
-
-
-
-
-
-
-
-
-
 echo('</div>');   
        
 }     
@@ -89,7 +70,49 @@ echo('</div>');
  
  
  
- 
+static function page_school($section){
+if($section=='school'){
+echo('<div class="page">');
+echo('<h4>SCHOOL OF COMPUTING AND INFORMATION TECHNOLOGY</h4>');
+echo('<div class="section" style="height:300px;">
+<p>SCIT</p>
+
+<p style="height:50px;">Welcome</p>
+
+<p>contact us</p>
+
+<p style="height:100px;">Departments</p>
+
+<p>Research</p>
+
+<p style="height:50px;">Key contacts</p>
+
+
+</div>');
+echo('<div class="section" style="height:500px;width:50%;border:solid thin silver;">
+<p>Information about the school</p>
+
+
+</div>');
+echo('<div class="section" style="height:500px;margin-top:-100px;">
+
+<p style="height:100px;">
+<img src="images/banner.jpg" style="width:150px;height:100px;margin-top:70px;border:solid 3px black;"/></p>
+<p style="margin-top:70px;">Dean profile</p>
+
+
+<p style="height:50px;">Timetable</p>
+
+<p style="height:50px;">Associations</p>
+<p style="height:50px;">Bulleting for University</p>
+
+<p style="height:50px;">Upcoming birthdays</p>
+
+</div>');
+echo('</div>');   
+       
+}     
+}   
  
  
  
@@ -103,7 +126,8 @@ echo('</div>');
 static function header_burner_announcement(){
 $section=$_GET['section'];
 if(isset($section)){
-page::page_schools_colleges($section);    
+page::page_schools_colleges($section);
+page::page_school($section);    
     
 }else{
 echo('<div class="banner">
@@ -139,7 +163,7 @@ echo('<div class="container">
 				<div class="bottom-grid">
 					<img class="img-responsive" src="images/back1.jpg" alt="">
 					<div class="fit">
-						<h6>Best fit for women’s feet</h6>
+						<h6>Best fit for womenâ€™s feet</h6>
 						<p>TRY TO WALK IN OUR SHOES</p>
 					</div>
 				</div>
@@ -315,7 +339,7 @@ echo('<div class="content-bottom">
 			<div class="container">
 				<p>Design is a funny word. Some people think 
 design means how it looks. But of course, if you dig deeper 
-it’s really how it works.</p>
+itâ€™s really how it works.</p>
 <label class="line1"> </label>
 <span>Steve Jobs</span>
 			</div>
