@@ -12,7 +12,24 @@ if($section=='schools_colleges'){
 echo('<div class="page">');
 echo('<h4>SCHOOLS AND COLLEGES</h4>');
 echo('<div class="section" style="height:300px;">
-<p>SCHOOLS & COLLEGES</p>
+<p>SCHOOLS & COLLEGES
+<div class="small_menu">
+<ul>
+<li><a href="#">bdhbdhd</a></li>
+<li><a href="#">bdhbdhd</a></li>
+<li><a href="#">bdhbdhd</a></li>
+<li><a href="#">bdhbdhd</a></li>
+<li><a href="#">bdhbdhd</a></li>
+<li><a href="#">bdhbdhd</a></li>
+<li><a href="#">bdhbdhd</a></li>
+
+
+
+
+
+</ul>
+</div>
+</p>
 
 <p style="height:50px;"></p>
 
@@ -27,19 +44,23 @@ echo('<div class="section" style="height:300px;">
 
 <p>Download resource</p>
 
-
 </div>');
-echo('<div class="section" style="height:300px;width:50%;border:solid thin silver;">
-<p>DESCRIPTION</p>
+echo('<div class="section" style="height:1000px;width:50%;border:solid thin silver;">
+<p class="heading">DESCRIPTION</p>
 
 <p style="height:100px;"></p>
 
 
-<p style="height:100px;">School of Computing and Information Technology</p>
+<p style="height:100px;"><div class="heading">School of Computing and Information Technology</div></p>
 
 
 
-<p style="height:100px;">Dean Welcome message</p>
+<p style="height:300px;"><div class="heading">Dean Welcome message</div>
+
+nddndjndjdnd
+
+
+</p>
 
 
 
@@ -53,32 +74,14 @@ echo('<div class="section" style="height:300px;width:50%;border:solid thin silve
 
 
 </div>');
-
-
-
-
-
-
-echo('<div class="section" style="height:300px;">
+echo('<div class="section" style="height:300px;width:22%;background:#2BDE73;">
 
 <p>Animation images</p>
 <p style="height:200px;"></p>
 
-<p>Bulleting for University</p>
+<p style="height:200px;border:solid thin green;" class="content">Bulleting for University</p>
 
 </div>');
-
-
-
-
-
-
-
-
-
-
-
-
 echo('</div>');   
        
 }     
@@ -89,12 +92,96 @@ echo('</div>');
  
  
  
- 
- 
- 
- 
- 
+static function page_school($section){
+if($section=='school'){
+echo('<div class="page">');
+echo('<h4>SCHOOL OF COMPUTING AND INFORMATION TECHNOLOGY</h4>');
+echo('<div class="section" style="height:300px;color:green;width:25%;margin-left:0;">
+<div class="content" style="background:#2BDE73;padding:5px;">
+<p>SCIT</p>
 
+<p style="height:50px;">Welcome</p>
+
+<p>contact us</p>
+
+<p style="height:200px;padding:5px;color:black;">Departments</p>
+
+<p>Research</p>
+
+<p style="height:50px;">Key contacts</p>
+
+</div>
+</div>');
+echo('<div class="section" style="height:500px;width:50%;border:solid thin silver;">
+<p>Information about the school</p>
+
+
+</div>');
+echo('<div class="section" style="height:500px;margin-top:-100px;">
+
+<p style="height:100px;">
+<img src="images/banner.jpg" style="width:150px;height:100px;margin-top:70px;" class="image"/></p>
+<p style="margin-top:70px;">Dean profile</p>
+
+
+<p style="height:50px;">Timetable</p>
+
+<p style="height:50px;">Associations</p>
+<p style="height:50px;">Bulleting for University</p>
+
+<p style="height:50px;">Upcoming birthdays</p>
+
+</div>');
+echo('</div>');   
+       
+}     
+}   
+ 
+ 
+ 
+ 
+ 
+static function page_department($section){
+if($section=='department'){
+echo('<div class="page">');
+echo('<h4>DEPARTMENT OF COMPUTER SCIENCE</h4>');
+echo('<div class="section" style="height:300px;">
+
+<p style="height:50px;">Welcome HOD</p>
+
+<p>programs</p>
+
+<p style="height:100px;">meet a staff</p>
+
+<p>Research</p>
+
+<p style="height:50px;">Key contacts</p>
+
+
+</div>');
+echo('<div class="section" style="height:500px;width:50%;border:solid thin silver;">
+<p>Programs</p>
+
+
+</div>');
+echo('<div class="section" style="height:500px;margin-top:-100px;">
+
+<p style="height:100px;">
+<img src="images/banner.jpg" style="width:150px;height:100px;margin-top:70px;" class="image"/></p>
+<p style="margin-top:70px;">HOD profile</p>
+
+
+<p style="height:50px;">Timetable</p>
+
+<p style="height:100px;">Bulletins</p>
+
+
+</div>');
+echo('</div>');   
+       
+}     
+}   
+ 
 
 
 
@@ -103,7 +190,9 @@ echo('</div>');
 static function header_burner_announcement(){
 $section=$_GET['section'];
 if(isset($section)){
-page::page_schools_colleges($section);    
+page::page_schools_colleges($section);
+page::page_school($section);
+page::page_department($section);    
     
 }else{
 echo('<div class="banner">
@@ -139,7 +228,7 @@ echo('<div class="container">
 				<div class="bottom-grid">
 					<img class="img-responsive" src="images/back1.jpg" alt="">
 					<div class="fit">
-						<h6>Best fit for women’s feet</h6>
+						<h6>Best fit for womenâ€™s feet</h6>
 						<p>TRY TO WALK IN OUR SHOES</p>
 					</div>
 				</div>
@@ -315,7 +404,7 @@ echo('<div class="content-bottom">
 			<div class="container">
 				<p>Design is a funny word. Some people think 
 design means how it looks. But of course, if you dig deeper 
-it’s really how it works.</p>
+itâ€™s really how it works.</p>
 <label class="line1"> </label>
 <span>Steve Jobs</span>
 			</div>
