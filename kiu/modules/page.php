@@ -97,14 +97,25 @@ if($section=='school'){
 echo('<div class="page">');
 echo('<h4>SCHOOL OF COMPUTING AND INFORMATION TECHNOLOGY</h4>');
 echo('<div class="section" style="height:300px;color:green;width:25%;margin-left:0;">
-<div class="content" style="background:#2BDE73;padding:5px;">
+<div class="heading" style="padding:5px;">
 <p>SCIT</p>
 
 <p style="height:50px;">Welcome</p>
 
 <p>contact us</p>
 
-<p style="height:200px;padding:5px;color:black;">Departments</p>
+<div style="height:200px;padding:5px;color:black;">DEPARTMENTS
+<div class="small_menu">
+<ul>
+<li><a href="#">Dept one</a></li>
+<li><a href="#">Dept one</a></li>
+<li><a href="#">Dept one</a></li>
+<li><a href="#">Dept one</a></li>
+<li><a href="#">Dept one</a></li>
+
+</ul>
+</div>
+</div>
 
 <p>Research</p>
 
@@ -112,8 +123,10 @@ echo('<div class="section" style="height:300px;color:green;width:25%;margin-left
 
 </div>
 </div>');
-echo('<div class="section" style="height:500px;width:50%;border:solid thin silver;">
-<p>Information about the school</p>
+
+
+echo('<div class="section" style="height:1000px;width:50%;border:solid thin silver;">
+<p class="heading">Information about the school</p>
 
 
 </div>');
@@ -124,12 +137,12 @@ echo('<div class="section" style="height:500px;margin-top:-100px;">
 <p style="margin-top:70px;">Dean profile</p>
 
 
-<p style="height:50px;">Timetable</p>
+<p style="height:50px;"><div class="heading">Timetable</div></p>
 
-<p style="height:50px;">Associations</p>
+<p style="height:200px;" class="heading">Associations</p>
 <p style="height:50px;">Bulleting for University</p>
 
-<p style="height:50px;">Upcoming birthdays</p>
+<p style="height:50px;"><div class="heading">Upcoming birthdays</div></p>
 
 </div>');
 echo('</div>');   
@@ -145,13 +158,13 @@ static function page_department($section){
 if($section=='department'){
 echo('<div class="page">');
 echo('<h4>DEPARTMENT OF COMPUTER SCIENCE</h4>');
-echo('<div class="section" style="height:300px;">
+echo('<div class="section" style="height:300px;width:20%;">
 
 <p style="height:50px;">Welcome HOD</p>
 
 <p>programs</p>
 
-<p style="height:100px;">meet a staff</p>
+<p style="height:300px;" class="heading">meet a staff</p>
 
 <p>Research</p>
 
@@ -160,7 +173,7 @@ echo('<div class="section" style="height:300px;">
 
 </div>');
 echo('<div class="section" style="height:500px;width:50%;border:solid thin silver;">
-<p>Programs</p>
+<p class="heading">Programs</p>
 
 
 </div>');
@@ -171,7 +184,7 @@ echo('<div class="section" style="height:500px;margin-top:-100px;">
 <p style="margin-top:70px;">HOD profile</p>
 
 
-<p style="height:50px;">Timetable</p>
+<p style="height:50px;"><div class="heading">Timetable</div></p>
 
 <p style="height:100px;">Bulletins</p>
 
