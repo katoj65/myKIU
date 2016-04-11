@@ -74,13 +74,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">			
 				<div class="logo">
 					<h1><?php
-                    if(!isset($_GET['section'])){
+                    if(isset($_GET['section'])){
                     echo('<a href="index.html">
                     
-                    <img src="images/logo.png" style="width:500px;height:200px; padding:20px;position: absolute;left:0; 
-                    margin-top:120px;border:solid 1px none;border-left:none;border-top:none;" />
+                    <img src="images/logo.png" style="width:200px;height:120px; padding:20px;position: absolute;left:0; 
+                    margin-top:50px;border:solid 1px none;border-left:none;border-top:none;" />
                     
                     </a>');
+                    }elseif(isset($_GET['dept'])){
+                    echo('<a href="index.html">
+                    
+                    <img src="images/logo.png" style="width:200px;height:120px; padding:20px;position: absolute;left:0; 
+                    margin-top:50px;border:solid 1px none;border-left:none;border-top:none;" />
+                    
+                    </a>');    
+                    }elseif(isset($_GET['sc'])){
+                    echo('<a href="index.html">
+                    
+                    <img src="images/logo.png" style="width:200px;height:120px; padding:20px;position: absolute;left:0; 
+                    margin-top:50px;border:solid 1px none;border-left:none;border-top:none;" />
+                    
+                    </a>');    
+                    }else{
+                    echo('<img src="images/logo.png" style="width:300px;height:200px; padding:20px;position: absolute;left:0; 
+                    margin-top:250px;border:solid 1px none;border-left:none;border-top:none;" />');    
                     }
                     
                      ?></h1>
@@ -463,7 +480,7 @@ It is based on Bootstrap.</p>
 					</div>
 			</div>
 			<div class="clearfix"> </div>
-			<p class="footer-class">© 2015 Amberegul All Rights Reserved | Afro-Django Initiative</a> </p>
+			<p class="footer-class">Â© 2015 Amberegul All Rights Reserved | Afro-Django Initiative</a> </p>
 		</div>
 	</div>
 <!---->
